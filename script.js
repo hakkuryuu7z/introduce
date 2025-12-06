@@ -12,11 +12,20 @@ const linkWA = `https://wa.me/${myNumber}?text=${pesanWA}`;
 // --- KOLEKSI STIKER LUCU (GIF) ---
 // Stiker ini akan muncul sesuai suasana hati percakapan
 const stickers = {
-  hi: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODF4N2V4ZnV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4L2Q5eWR6aW5t/giphy.gif", // Beruang Say Hi
-    work: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWx5aG54ZnV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4L2NhdC10eXBpbmc/giphy.gif", // Kucing Semangat Kerja/Ngetik
-    shy: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmN5aG54ZnV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4L2N1dGUtYmVhcg/giphy.gif", // Beruang Malu/Shy
-    mountain: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG15aG54ZnV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4L3N0YXJyeS1leWVz/giphy.gif", // Mata Berbinar (Starry Eyes)
-    love: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDl5aG54ZnV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4bmV4L2hlYXJ0cy1sb3Zl/giphy.gif" // Hati/Love Banyak
+  // Beruang Say Hi
+    hi: "https://media.tenor.com/fTTVgygZD1wAAAAi/cute-bear.gif", 
+    
+    // Kucing Semangat Kerja/Ngetik
+    work: "https://media.tenor.com/P5b6sM91h4cAAAAi/cute-cat.gif", 
+    
+    // Beruang Malu/Shy
+    shy: "https://media.tenor.com/eH4SeRXrVCypK98Flw/giphy.gif", 
+    
+    // Mata Berbinar (Starry Eyes)
+    mountain: "https://media.tenor.com/Images/70e281577435476880080d8d6411559e/tenor.gif", 
+    
+    // Hati/Love Banyak
+    love: "https://media.tenor.com/l5_u4J0x24oAAAAi/mochi-peach.gif"
 };
 
 function typeWriter(text, i, fnCallback) {
