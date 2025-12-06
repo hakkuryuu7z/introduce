@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Background */
+.game-background {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    /* Gambar Gunung */
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1470&auto=format&fit=crop'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.9) 100%);
+}
+
+/* Container Utama UI (Mengatur Posisi Elemen) */
+.ui-container {
+    position: absolute;
+    bottom: 20px; /* Jarak dari bawah layar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column; /* Susun ke bawah */
+    justify-content: flex-end; /* Mulai dari bawah */
+    align-items: center;
+}
+
+/* 1. Stiker Lucu */
+.sticker-area {
+    margin-bottom: 10px;
+    height: 120px; /* Tinggi area stiker */
+    display: flex;
+    align-items: flex-end;
+}
+
+.sticker {
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,0.3));
+    animation: bounce 2s infinite; /* Animasi membal-membal lucu */
+}
+
+.sticker.hidden {
+    display: none;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
+/* 2. Area Pilihan (Tombol) */
+.choices-area {
+    width: 100%;
+    margin-bottom: 15px; /* Jarak antara tombol dan kotak teks */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.choice-btn {
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 12px 15px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+    animation: popIn 0.3s ease;
+}
+
+.choice-btn:active {
+    transform: scale(0.95);
+    background: #ff7e5f;
+    color: white;
+}
+
+@keyframes popIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* 3. Kotak Dialog (Teks) */
+.dialogue-box {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 100px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.4);
+    position: relative;
+    border: 3px solid rgba(255,255,255,0.3);
+}
+
+.name-tag {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: #ff7e5f; /* Warna peach/orange */
+    color: white;
+    padding: 4px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#dialogue-text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #444;
+}
