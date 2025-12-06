@@ -39,23 +39,6 @@ body {
 }
 
 /* 1. Stiker Lucu */
-.sticker-area {
-    margin-bottom: 10px;
-    height: 120px; /* Tinggi area stiker */
-    display: flex;
-    align-items: flex-end;
-}
-
-.sticker {
-    width: 100px;
-    height: auto;
-    filter: drop-shadow(0 5px 5px rgba(0,0,0,0.3));
-    animation: bounce 2s infinite; /* Animasi membal-membal lucu */
-}
-
-.sticker.hidden {
-    display: none;
-}
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
